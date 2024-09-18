@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo e Economia da Criação de Bezerros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .question {
+            margin-top: 20px;
+            color: #2c3e50;
+        }
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .options button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .options button:hover {
+            background-color: #2980b9;
+        }
+        .feedback {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .feedback.correct {
+            color: #27ae60;
+        }
+        .feedback.incorrect {
+            color: #c0392b;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e8f4f8;
+            border-left: 4px solid #3498db;
+        }
+        .show-answer {
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .show-answer:hover {
+            background-color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Manejo Pós-desmame e Economia da Criação de Bezerros</h1>
+
+        <h2>Manejo Pós-desmame</h2>
+        <p>Após o desmame, os custos de criação caem para $1,22 por dia até que os bezerros alcancem 100 kg de peso vivo. Posteriormente, esses custos aumentam gradualmente, alcançando $2,07 por dia para bezerros com 550 kg de peso.</p>
+        <ul>
+            <li>Alimentação após o desmame deve ser planejada para manter a taxa de crescimento. É importante fornecer feno de alta qualidade e suplementos minerais.</li>
+            <li>O manejo adequado é essencial para garantir que os bezerros atinjam os pesos ideais ao longo de seu desenvolvimento&#8203;:contentReference[oaicite:0]{index=0}.</li>
+        </ul>
+
+        <h2>Economia da Criação de Bezerros</h2>
+        <p>Os custos de criação de bezerros variam significativamente, dependendo do tamanho do rebanho e do sistema de manejo adotado.</p>
+        <ul>
+            <li>Custos de criação variam de $185 a $435 por bezerro, com uma média de $260 por bezerro. Alimentação representa 36% desses custos, enquanto trabalho e manejo representam 42%&#8203;:contentReference[oaicite:1]{index=1}.</li>
+            <li>Pequenos rebanhos tendem a ter custos mais elevados de criação por bezerro, com custos diários de $3,41 para rebanhos menores que 75 vacas. Em rebanhos maiores, os custos caem para $2,57 por bezerro&#8203;:contentReference[oaicite:2]{index=2}.</li>
+        </ul>
+
+        <div class="question" id="question1">
+            <p>Qual é o custo médio de criação de um bezerro do nascimento até o desmame?</p>
+            <div class="options">
+                <button onclick="this.disabled=true; document.getElementById('q1-feedback').textContent='Incorreto. Tente novamente.'; document.getElementById('q1-feedback').className='feedback incorrect';">a) $150-$250</button>
+                <button onclick="this.disabled=true; document.getElementById('q1-feedback').textContent='Correto!'; document.getElementById('q1-feedback').className='feedback correct';">b) $185-$435</button>
+                <button onclick="this.disabled=true; document.getElementById('q1-feedback').textContent='Incorreto. Tente novamente.'; document.getElementById('q1-feedback').className='feedback incorrect';">c) $500-$700</button>
+            </div>
+            <p id="q1-feedback" class="feedback"></p>
+            <button onclick="var answer = this.nextElementSibling; answer.style.display = answer.style.display === 'block' ? 'none' : 'block';" class="show-answer">Ver explicação completa</button>
+            <div class="answer">
+                A resposta correta é b) $185-$435. Esses custos variam de acordo com o tamanho do rebanho e a eficiência do manejo&#8203;:contentReference[oaicite:3]{index=3}.
+            </div>
+        </div>
+
+        <h2>Melhores Práticas de Manejo</h2>
+        <p>As melhores práticas de manejo são essenciais para a criação de bezerros saudáveis e produtivos. Entre as recomendações estão:</p>
+        <ul>
+            <li>Redução de doenças através de programas preventivos de vacinação e controle de parasitas&#8203;:contentReference[oaicite:4]{index=4}.</li>
+            <li>Monitoramento constante do peso dos bezerros para garantir que atinjam o peso esperado em cada fase do desenvolvimento&#8203;:contentReference[oaicite:5]{index=5}.</li>
+            <li>Uso de colostro de alta qualidade nas primeiras horas de vida para aumentar a imunidade dos bezerros&#8203;:contentReference[oaicite:6]{index=6}.</li>
+        </ul>
+
+        <div class="question" id="question2">
+            <p>Quais são as práticas recomendadas para reduzir a mortalidade em bezerros?</p>
+            <div class="options">
+                <button onclick="this.disabled=true; document.getElementById('q2-feedback').textContent='Incorreto. Tente novamente.'; document.getElementById('q2-feedback').className='feedback incorrect';">a) Reduzir a alimentação de colostro</button>
+                <button onclick="this.disabled=true; document.getElementById('q2-feedback').textContent='Correto!'; document.getElementById('q2-feedback').className='feedback correct';">b) Programas preventivos de vacinação</button>
+                <button onclick="this.disabled=true; document.getElementById('q2-feedback').textContent='Incorreto. Tente novamente.'; document.getElementById('q2-feedback').className='feedback incorrect';">c) Aumentar o tempo de amamentação</button>
+            </div>
+            <p id="q2-feedback" class="feedback"></p>
+            <button onclick="var answer = this.nextElementSibling; answer.style.display = answer.style.display === 'block' ? 'none' : 'block';" class="show-answer">Ver explicação completa</button>
+            <div class="answer">
+                A resposta correta é b) Programas preventivos de vacinação. A prevenção de doenças é essencial para a redução de custos e mortalidade&#8203;:contentReference[oaicite:7]{index=7}.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
